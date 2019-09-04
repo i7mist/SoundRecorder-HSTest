@@ -253,6 +253,9 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         try {
+                            @UserInputSource(
+                                    ID = "UserInputSource-0",
+                                    purposes = {"Rename the file dialog"})
                             String value = input.getText().toString().trim() + ".mp4";
                             rename(position, value);
 

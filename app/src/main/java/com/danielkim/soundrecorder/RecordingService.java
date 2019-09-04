@@ -32,6 +32,9 @@ public class RecordingService extends Service {
     private static final String LOG_TAG = "RecordingService";
 
     private String mFileName = null;
+    @MicrophoneSource(
+            ID = "MicrophoneSource-0",
+            purposes = {"to record audio recordings (this is a sound recording app)"})
     private String mFilePath = null;
 
     private MediaRecorder mRecorder = null;
